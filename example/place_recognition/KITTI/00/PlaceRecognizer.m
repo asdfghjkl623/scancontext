@@ -2,17 +2,19 @@ clear; clc;
 addpath(genpath('../../../../matlab/'));
 
 %% Change this to your path
-vel_dir = 'F:\KITTI odo\data_odometry_velodyne\dataset\sequences\00\velodyne/';
+% vel_dir = '/media/gskim/Data/KITTI odo/data_odometry_velodyne/dataset/sequences/00/velodyne/';
+vel_dir = 'your_pointcloud_files_path';
 
 
 %% Params
+% below 3 parameters: same setting as the original paper (G. Kim, 18 IROS)
 max_range = 80; % meter 
 num_sectors = 60;
-num_rings = 20;
+num_rings = 20; 
 
-num_candidates = 50; % Scan Context-50 in the paper.
+num_candidates = 50; % means Scan Context-50 in the paper.
 
-loop_thres = 0.2;
+loop_thres = 0.2; % ### this is a user parameter ###
 
 num_enough_node_diff = 50; 
 

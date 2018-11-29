@@ -1,5 +1,5 @@
 clear; clc;
-addpath(genpath('../matlab/'));
+addpath(genpath('../../matlab/'));
 
 
 %% Parameters 
@@ -31,9 +31,12 @@ caxis([0, 4]); % KITTI00 is usually in z: [0, 4]
 
 %% ScanContext with different resolution 
 
+figure(2); clf;
+pcshow(ptcloud); colormap jet; caxis([0 4]);
+
 res = [0.25, 0.5, 1, 2, 3]; 
 
-h2=figure(2); clf;
+h2=figure(3); clf;
 set(gcf, 'Position', [10 10 500 1000]);
 
 for i = 1:length(res)
@@ -47,6 +50,7 @@ for i = 1:length(res)
     colormap jet;
     caxis([0, 4]); % KITTI00 is usually in z: [0, 4]
 end
+
 
 
 %% Comparison btn two scan contexts
