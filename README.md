@@ -40,7 +40,7 @@ recognition and long-term localization.
  3. _**long-term localization**_ is an example directory for our RAL19 paper. For the separation of mapping and localization, there are separated train and test steps. The main training and test codes are written in python and Keras, only excluding data generation and performance evaluation codes (they are written in Matlab), and those python codes are provided using jupyter notebook. We note that some path may not directly work for your environment but the evaluation codes (e.g., makeDataForPRcurveForSCIresult.m) will help you understand how this classification-based SCI-localization system works. The figure below depicts our long-term localization pipeline. <p align="center"><img src="example/longterm_localization/sci_pipeline.png" width=600></p> More details of our long-term localization pipeline is found in the below paper:
 
 ```
-@ARTICLE{
+@ARTICLE{ gkim-2019-ral,
     author = {G. {Kim} and B. {Park} and A. {Kim}}, 
     journal = {IEEE Robotics and Automation Letters}, 
     title = {1-Day Learning, 1-Year Localization: Long-Term LiDAR Localization Using Scan Context Image}, 
