@@ -27,16 +27,17 @@ recognition and long-term localization.
 <p align="center"><img src="example/basic/various_res.png" width=300></p>
 
 
-## Structure of this repository
+## How to use?: example cases 
+- The structure of this repository is composed of 3 example use cases.
 - Most of the codes are written in Matlab.
 - A directory _matlab_ contains main functions including Scan Context generation and the distance function.
 - A directory _example_ contains a full example code for a few applications. We provide a total 3 examples.
  1. _**basics**_ contains a literally basic codes such as generation and can be a start point to understand Scan Context.
  
- 2. _**place recognition**_ is a repository for our IROS18 paper. The example is conducted using KITTI sequence 00 and PlaceRecognizer.m is the main code. You can easily grasp the full pipeline of Scan Context-based place recognition via watching and following the PlaceRecognizer.m code. Our Scan Context-based place recognition system consists of two steps; description and search. The search step is then composed of two hierarchical stages (1. ring key-based KD tree for fast candidate proposal, 2. candidate to query pairwise comparison-based nearest search). We note that our coarse yaw aligning-based pairwise distance enables reverse-revisit detection well, unlike others. The pipeline is below. 
+ 2. _**place recognition**_ is an example directory for our IROS18 paper. The example is conducted using KITTI sequence 00 and PlaceRecognizer.m is the main code. You can easily grasp the full pipeline of Scan Context-based place recognition via watching and following the PlaceRecognizer.m code. Our Scan Context-based place recognition system consists of two steps; description and search. The search step is then composed of two hierarchical stages (1. ring key-based KD tree for fast candidate proposal, 2. candidate to query pairwise comparison-based nearest search). We note that our coarse yaw aligning-based pairwise distance enables reverse-revisit detection well, unlike others. The pipeline is below. 
 <p align="center"><img src="example/place_recognition/sc_pipeline.png" width=600></p>
 
- 3. _**long-term localization**_ is the second example of our applicaiton and a repository for our RAL19 paper. For the separation of mapping and localization, there are separated train and test steps. The main training and test codes are written in python and Keras, only excluding data generation and performance evaluation codes (they are written in Matlab), and those python codes are provided using jupyter notebook. We note that some path may not directly work for your environment but the evaluation codes (e.g., makeDataForPRcurveForSCIresult.m) will help you understand how this classification-based SCI-localization system works. The figure below depicts our long-term localization pipeline. <p align="center"><img src="example/longterm_localization/sci_pipeline.png" width=600></p> More details of our long-term localization pipeline is found in the below paper:
+ 3. _**long-term localization**_ is an example directory for our RAL19 paper. For the separation of mapping and localization, there are separated train and test steps. The main training and test codes are written in python and Keras, only excluding data generation and performance evaluation codes (they are written in Matlab), and those python codes are provided using jupyter notebook. We note that some path may not directly work for your environment but the evaluation codes (e.g., makeDataForPRcurveForSCIresult.m) will help you understand how this classification-based SCI-localization system works. The figure below depicts our long-term localization pipeline. <p align="center"><img src="example/longterm_localization/sci_pipeline.png" width=600></p> More details of our long-term localization pipeline is found in the below paper:
 
 ```
 @ARTICLE{
