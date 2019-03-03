@@ -102,7 +102,7 @@ end
 % 10m
 filepath = strcat(DIR_SampledPlacesInformation, '/TrajectoryInformation.csv');
 TrajectoryInformation = TrajectoryInformationWRT10mCell;
-dlmwrite(filepath, TrajectoryInformation, 'precision','%.2f')
+dlmwrite(filepath, TrajectoryInformation, 'precision','%.6f')
 
 
 

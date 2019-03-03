@@ -1,6 +1,3 @@
-% MetaFile 
-MetafileDir = './MetaData/';
-
 % flag for train/test
 IF_TRAINING = 1;
 
@@ -29,10 +26,4 @@ SCI_HEIGHT_RANGE = [NCLTminHeight, NCLTmaxHeight];
 minColor = 0;
 maxColor = 255;
 rangeColor = maxColor - minColor;
-
-% m2dp
-OutputDim_M2DP = 192;
-
-% pointnetvlad 
-InputNumPoints_PointNetVLAD = 4096;
 

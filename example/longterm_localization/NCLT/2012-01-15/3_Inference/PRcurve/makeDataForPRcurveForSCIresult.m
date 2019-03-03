@@ -1,15 +1,6 @@
 clear
 addpath(genpath('./'));
 
-%% Past (not used now)
-% True Seen Directroy
-% TestDataSeenPlacesParentDir = '/home/gskim/Dropbox/18 spring KAIST/4-2. ICRA 2019 - ScanContextWithCNN/2. general timeline/20180323 Top5 acc 구해보기/TopNaccuracyCalculator/PredictResults(seen places)/';
-% TestDataSeenPlacesParentDir = 'C:\Users\gskim\Dropbox\18 spring KAIST\4-2. ICRA 2019 - ScanContextWithCNN\2. general timeline\20180323 Top5 acc ���غ���\TopNaccuracyCalculator\PredictResults(seen places)/';
-
-% True Unseen Directroy
-% TestDataUnseenPlacesParentDir = '/home/gskim/Dropbox/18 spring KAIST/4-2. ICRA 2019 - ScanContextWithCNN/2. general timeline/20180424 Unseen place Test 결과/results/';
-% TestDataUnseenPlacesParentDir = 'C:\Users\gskim\Dropbox\18 spring KAIST\4-2. ICRA 2019 - ScanContextWithCNN\2. general timeline\20180424 Unseen place Test ���\results/';
-
 %% Setup 
 Dataset = 'NCLT';
 Method = 'LearningSCI';

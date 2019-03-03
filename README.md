@@ -6,11 +6,11 @@
 ```
 @INPROCEEDINGS { gkim-2018-iros,
   author = {Kim, Giseop and Kim, Ayoung},
-  TITLE = { Scan Context: Egocentric Spatial Descriptor for Place Recognition within {3D} Point Cloud Map },
-  BOOKTITLE = { Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems },
-  YEAR = { 2018 },
-  MONTH = { Oct. },
-  ADDRESS = { Madrid }
+  title = { Scan Context: Egocentric Spatial Descriptor for Place Recognition within {3D} Point Cloud Map },
+  booktitle = { Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems },
+  year = { 2018 },
+  month = { Oct. },
+  address = { Madrid }
 }
 ```
 - This point cloud descriptor is used for place retrieval problem such as place
@@ -23,7 +23,7 @@ recognition and long-term localization.
 - It encodes egocentric visible information as below:
 <p align="center"><img src="example/basic/scmaking.gif" width=400></p>
 
-- A user can vary the resolution of Scan Context for appropriate applications. Below is the example of Scan Contexts of various resolutions for the same point cloud.
+- A user can vary the resolution of a Scan Context. Below is the example of Scan Contexts' various resolutions for the same point cloud.
 <p align="center"><img src="example/basic/various_res.png" width=300></p>
 
 
@@ -31,17 +31,35 @@ recognition and long-term localization.
 - Most of the codes are written in Matlab.
 - A directory _matlab_ contains main functions including Scan Context generation and the distance function.
 - A directory _example_ contains a full example code for a few applications. We provide a total 3 examples.
- 1. _**basics**_ contains a literally basic codes such as generation and can be a start point to understand Scan Context.   
- 2. _**place recognition**_ is the first example of our application. The example is conducted using KITTI sequence 00 and PlaceRecognizer.m is the main code. You can easily grasp the full pipeline of Scan Context-based place recognition via watching and following the PlaceRecognizer.m code.
- 3. _**long-term localization**_ is the second example of our applicaiton. For the separation of mapping and localization, there are separate train and test steps. Main training and test codes are written in python and keras, only excluding data generation and performance evaluation codes (they are written in Matlab), and jupyter notebook of those python codes are provided. More details of our long-term localization pipeline is found in the below paper:
+ 1. _**basics**_ contains a literally basic codes such as generation and can be a start point to understand Scan Context.
+ 
+ 2. _**place recognition**_ is a repository for our IROS18 paper. The example is conducted using KITTI sequence 00 and PlaceRecognizer.m is the main code. You can easily grasp the full pipeline of Scan Context-based place recognition via watching and following the PlaceRecognizer.m code. Our Scan Context-based place recognition system consists of two steps; description and search. The search step is then composed of two hierarchical stages (1. ring key-based KD tree for fast candidate proposal, 2. candidate to query pairwise comparison-based nearest search). The pipeline is below. 
+<p align="center"><img src="example/place_recognition/sc_pipeline.gif" width=400></p>
+We note that our coarse yaw aligning-based pairwise distance enables reverse-revisit detection well, unlike others.
+
+ 3. _**long-term localization**_ is the second example of our applicaiton and a repository for our RAL19 paper. For the separation of mapping and localization, there are separated train and test steps. The main training and test codes are written in python and Keras, only excluding data generation and performance evaluation codes (they are written in Matlab), and those python codes are provided using jupyter notebook. We note that some path may not directly work for your environment but the evaluation codes (e.g., makeDataForPRcurveForSCIresult.m) will help you understand how this classification-based SCI-localization system works. The figure below depicts our long-term localization pipeline. 
+<p align="center"><img src="example/longterm_localization/sci_pipeline.gif" width=400></p>
+More details of our long-term localization pipeline is found in the below paper:
  ```
-@ARTICLE{8633942, 
-author={G. {Kim} and B. {Park} and A. {Kim}}, 
-journal={IEEE Robotics and Automation Letters}, 
-title={1-Day Learning, 1-Year Localization: Long-Term LiDAR Localization Using Scan Context Image}, 
-year={2019}, 
-volume={4}, 
-number={2}, 
-pages={1948-1955}, 
-month={April},}
+@ARTICLE{
+    author = {G. {Kim} and B. {Park} and A. {Kim}}, 
+    journal = {IEEE Robotics and Automation Letters}, 
+    title = {1-Day Learning, 1-Year Localization: Long-Term LiDAR Localization Using Scan Context Image}, 
+    year = {2019}, 
+    volume = {4}, 
+    number = {2}, 
+    pages = {1948-1955}, 
+    month = {April}
+}
  ```
+
+## Acknowledgment
+This work is supported by the Korea Agency for Infrastructure Technology Advancement (KAIA) grant funded by the Ministry of Land, Infrastructure and Transport of Korea (19CTAP-C142170-02), and [High-Definition Map Based Precise Vehicle Localization Using Cameras and LIDARs] project funded by Naver
+Labs Corporation.
+
+## Contact
+If you have any questions, contact here please
+ ```
+    paulgkim@kaist.ac.kr
+ ```
+
