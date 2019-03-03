@@ -35,11 +35,13 @@ recognition and long-term localization.
  2. _**place recognition**_ is the first example of our application. The example is conducted using KITTI sequence 00 and PlaceRecognizer.m is the main code. You can easily grasp the full pipeline of Scan Context-based place recognition via watching and following the PlaceRecognizer.m code.
  3. _**long-term localization**_ is the second example of our applicaiton. For the separation of mapping and localization, there are separate train and test steps. Main training and test codes are written in python and keras, only excluding data generation and performance evaluation codes (they are written in Matlab), and jupyter notebook of those python codes are provided. More details of our long-term localization pipeline is found in the below paper:
  ```
- @INPROCEEDINGS { gkim-2019-ral,
-   author = {Kim, Giseop and Park, Byungjae and Kim, Ayoung},
-   TITLE = { 1-Day Learning, 1-Year Localization:Long-term {LiDAR} Localization using {Scan Context} Image},
-   BOOKTITLE = { IEEE Robotics and Automation Letters},
-   YEAR = { 2019 },
-   NOTE = {Under Review}
- }
+@ARTICLE{8633942, 
+author={G. {Kim} and B. {Park} and A. {Kim}}, 
+journal={IEEE Robotics and Automation Letters}, 
+title={1-Day Learning, 1-Year Localization: Long-Term LiDAR Localization Using Scan Context Image}, 
+year={2019}, 
+volume={4}, 
+number={2}, 
+pages={1948-1955}, 
+month={April},}
  ```
