@@ -22,8 +22,10 @@ class ScanContext:
     
     kitti_lidar_height = 2.0;
     
-    sector_res = np.array([45, 90, 180, 360, 720])
-    ring_res = np.array([10, 20, 40, 80, 160])
+    # sector_res = np.array([45, 90, 180, 360, 720])
+    # ring_res = np.array([10, 20, 40, 80, 160])
+    sector_res = np.array([60])
+    ring_res = np.array([20])
     max_length = 80
     
      
@@ -116,7 +118,7 @@ class ScanContext:
         downpcd = voxel_down_sample(pcd, voxel_size = ScanContext.downcell_size)
         ptcloud_xyz_downed = np.asarray(downpcd.points)
         print("The number of downsampled points: " + str(ptcloud_xyz_downed.shape) ) 
-        draw_geometries([downpcd])
+        # draw_geometries([downpcd])
     
         if(ScanContext.viz):
             draw_geometries([downpcd])
@@ -156,8 +158,11 @@ if __name__ == "__main__":
         sc = ScanContext(bin_dir, bin_file_name)
 
         fig_idx = 1
-        sc.plot_multiple_sc(fig_idx)
-        
+        # sc.plot_multiple_sc(fig_idx)
+
+        print(len(sc.SCs))
+        print(sc.SCs[0].shape)
+
         
         
         
