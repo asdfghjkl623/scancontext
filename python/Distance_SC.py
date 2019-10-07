@@ -70,19 +70,3 @@ if __name__ == "__main__":
     print(dist_1a_2a)
     print(dist_2a_2b)
 
-    # The scancontext results generated from 'make_sc_example.py' is a little different with 'Ptcloud2ScanContext.m'
-    # Don't know why
-
-    # python result
-    # 0.10860358309493079
-    # 0.4954163429642825
-    # 0.4809364940958847
-    # 0.13027243597096394
-
-    # matlab result
-    # 0.1426
-    # 0.5109
-    # 0.4902
-    # 0.1151
-
-
