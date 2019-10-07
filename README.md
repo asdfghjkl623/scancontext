@@ -38,8 +38,6 @@ recognition and long-term localization.
 <p align="center"><img src="example/place_recognition/sc_pipeline.png" width=600></p>
 
  3. _**long-term localization**_ is an example directory for our RAL19 paper. For the separation of mapping and localization, there are separated train and test steps. The main training and test codes are written in python and Keras, only excluding data generation and performance evaluation codes (they are written in Matlab), and those python codes are provided using jupyter notebook. We note that some path may not directly work for your environment but the evaluation codes (e.g., makeDataForPRcurveForSCIresult.m) will help you understand how this classification-based SCI-localization system works. The figure below depicts our long-term localization pipeline. <p align="center"><img src="example/longterm_localization/sci_pipeline.png" width=600></p> More details of our long-term localization pipeline is found in the below paper and we also recommend you to watch this <a href="https://www.youtube.com/watch?v=apmmduXTnaE"> video </a>.
-
- 4. _**SLAM**_ contains the related repository; the full-python LiDAR SLAM codes using Scan Context as a loop detector.
 ```
 @ARTICLE{ gkim-2019-ral,
     author = {G. {Kim} and B. {Park} and A. {Kim}},
@@ -52,6 +50,8 @@ recognition and long-term localization.
     month = {April}
 }
 ```
+
+  4. _**SLAM**_ directory contains the practical use case of Scan Context for SLAM pipeline. The details are maintained in the related other repository _[PyICP SLAM](https://github.com/kissb2/PyICP-SLAM)_; the full-python LiDAR SLAM codes using Scan Context as a loop detector.
 
 ## Acknowledgment
 This work is supported by the Korea Agency for Infrastructure Technology Advancement (KAIA) grant funded by the Ministry of Land, Infrastructure and Transport of Korea (19CTAP-C142170-02), and [High-Definition Map Based Precise Vehicle Localization Using Cameras and LIDARs] project funded by NAVER LABS Corporation.
