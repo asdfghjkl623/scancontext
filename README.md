@@ -1,6 +1,23 @@
 <!-- md preview: Show the rendered HTML markdown to the right of the current editor using ctrl-shift-m.-->
 
 # Scan Context
+
+---
+## NEWS (April, 2020)
+- C++ implementation released!
+  - See the directory `cpp/module/Scancontext`
+  - Features 
+    - Light-weight: a single header and cpp file named "Scancontext.h" and "Scancontext.cpp"
+      - Our module has KDtree and we used [nanoflann]("https://github.com/jlblancoc/nanoflann"). nanoflann is an also single-header-program and that file is in our directory.
+    - Easy to use: A user just remembers and uses only two API functions; `makeAndSaveScancontextAndKeys` and `detectLoopClosureID`.
+    - Fast: tested the loop detector runs at 10-15Hz (for 20 x 60 size, 10 candidates)
+  - Example: Real-time LiDAR SLAM
+    - We integrated the C++ implementation within the recent popular LiDAR odometry code, [LeGO-LOAM]("https://github.com/RobustFieldAutonomyLab/LeGO-LOAM").
+    - That is, LiDAR SLAM = LiDAR Odometry (LeGO-LOAM) + Loop detection (Scan Context) and closure (GTSAM)
+    - For details, see `cpp/example/lidar_slam` or refer this [repository]("https://github.com/irapkaist/sc-legoloam").
+---
+
+
 - Scan Context is a global descriptor for LiDAR point cloud, which is proposed in this paper and details are easily summarized in this <a href="https://www.youtube.com/watch?v=_etNafgQXoY"> video </a>.
 
 ```
