@@ -1,2 +1,2 @@
 # Go to 
-- https://github.com/irapkaist/sc-legoloam
+- https://github.com/irapkaist/SC-LeGO-LOAM
