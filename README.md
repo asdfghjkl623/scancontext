@@ -8,7 +8,7 @@
   - See the directory `cpp/module/Scancontext`
   - Features 
     - Light-weight: a single header and cpp file named "Scancontext.h" and "Scancontext.cpp"
-      - Our module has KDtree and we used <a href="https://github.com/jlblancoc/nanoflann"> nanoflann </a>. nanoflann is an also single-header-program and that file is in our directory.
+      - Our module has KDtree and we used <a href="https://github.com/jlblancoc/nanoflann"> nanoflann</a>. nanoflann is an also single-header-program and that file is in our directory.
     - Easy to use: A user just remembers and uses only two API functions; `makeAndSaveScancontextAndKeys` and `detectLoopClosureID`.
     - Fast: tested the loop detector runs at 10-15Hz (for 20 x 60 size, 10 candidates)
   - Example: Real-time LiDAR SLAM
