@@ -17,4 +17,7 @@
     
 - More information about the radar data, please refer [MulRan](https://sites.google.com/view/mulran-pr/home) or Oxford Radar RobotCar dataset 
     
-    
+## How to use 
+- 1. write your own MulRan dataset path in the main.m file 
+- 2. run main.m (then some data and evaluation files will be generated)
+- 3. run prcurve_drawer.m 
