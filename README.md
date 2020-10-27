@@ -3,6 +3,11 @@
 # Scan Context
 
 ---
+## NEWS (Oct, 2020)
+- An evaluation code for radar place recognition (a.k.a. Radar Scan Context) is uploaded. 
+- please see the *fast_evaluator_radar* directory.
+
+---
 ## NEWS (April, 2020)
 - C++ implementation released!
   - See the directory `cpp/module/Scancontext`
