@@ -2,13 +2,16 @@
 
 # Scan Context
 
+## NEWS (Nov, 2020): integrated with LIO-SAM
+- A Scan Context integration for LIO-SAM, named [SC-LIO-SAM (link)](https://github.com/gisbi-kim/SC-LIO-SAM), is also released. 
+
 ---
-## NEWS (Oct, 2020)
+## NEWS (Oct, 2020): Radar Scan Context 
 - An evaluation code for radar place recognition (a.k.a. Radar Scan Context) is uploaded. 
 - please see the *fast_evaluator_radar* directory.
 
 ---
-## NEWS (April, 2020)
+## NEWS (April, 2020): C++ implementation
 - C++ implementation released!
   - See the directory `cpp/module/Scancontext`
   - Features 
