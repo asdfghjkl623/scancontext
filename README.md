@@ -18,9 +18,9 @@
     - Easy to use: A user just remembers and uses only two API functions; `makeAndSaveScancontextAndKeys` and `detectLoopClosureID`.
     - Fast: tested the loop detector runs at 10-15Hz (for 20 x 60 size, 10 candidates)
   - Example: Real-time LiDAR SLAM
-    - We integrated the C++ implementation within the recent popular LiDAR odometry code, <a href="https://github.com/RobustFieldAutonomyLab/LeGO-LOAM"> LeGO-LOAM </a>.
-    - That is, LiDAR SLAM = LiDAR Odometry (LeGO-LOAM) + Loop detection (Scan Context) and closure (GTSAM)
-    - For details, see `cpp/example/lidar_slam` or refer this <a href="https://github.com/irapkaist/SC-LeGO-LOAM"> repository (SC-LeGO-LOAM)</a>.
+    - We integrated the C++ implementation within the recent popular LiDAR odometry codes (e.g., <a href="https://github.com/RobustFieldAutonomyLab/LeGO-LOAM"> LeGO-LOAM </a> and <a href="https://github.com/HKUST-Aerial-Robotics/A-LOAM">A-LOAM</a>).
+      - That is, LiDAR SLAM = LiDAR Odometry (LeGO-LOAM) + Loop detection (Scan Context) and closure (GTSAM)
+    - For details, see `cpp/example/lidar_slam` or refer these repositories: <a href="https://github.com/irapkaist/SC-LeGO-LOAM">SC-LeGO-LOAM</a> or <a href="https://github.com/gisbi-kim/SC-A-LOAM">SC-A-LOAM</a>.
 ---
 
 
