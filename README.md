@@ -8,6 +8,7 @@
 ## NEWS (Oct, 2020): Radar Scan Context 
 - An evaluation code for radar place recognition (a.k.a. Radar Scan Context) is uploaded. 
 - please see the *fast_evaluator_radar* directory.
+- for the real-time radar SLAM, see [navtech-radar-slam](https://github.com/gisbi-kim/navtech-radar-slam), which integrated Scan Context and Yeti radar odometry. 
 
 ## NEWS (April, 2020): C++ implementation
 - C++ implementation released!
