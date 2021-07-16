@@ -2,13 +2,17 @@
 
 # Scan Context
 
-## NEWS (Nov, 2020): integrated with LIO-SAM
-- A Scan Context integration for LIO-SAM, named [SC-LIO-SAM (link)](https://github.com/gisbi-kim/SC-LIO-SAM), is also released. 
-
-## NEWS (Oct, 2020): Radar Scan Context 
-- An evaluation code for radar place recognition (a.k.a. Radar Scan Context) is uploaded. 
-- please see the *fast_evaluator_radar* directory.
-- for the real-time radar SLAM, see [navtech-radar-slam](https://github.com/gisbi-kim/navtech-radar-slam), which integrated Scan Context and Yeti radar odometry. 
+## Note
+- Scan Context can be easily integrated with any LiDAR odometry algorithms or any LiDAR sensors. Examples are:
+  - Integrated with A-LOAM: [SC-A-LOAM](https://github.com/gisbi-kim/SC-A-LOAM)
+  - Integrated with LeGO-LOAM: [SC-LeGO-LOAM](https://github.com/irapkaist/SC-LeGO-LOAM)
+  - Integrated with LIO-SAM: [SC-LIO-SAM](https://github.com/gisbi-kim/SC-LIO-SAM)
+  - Integrated with FAST-LIO2: [FAST_LIO_SLAM](https://github.com/gisbi-kim/FAST_LIO_SLAM)
+  - Integrated with a basic ICP odometry: [PyICP-SLAM](https://github.com/gisbi-kim/PyICP-SLAM)
+    - This implementation is fully python-based so slow but educational purpose.   
+- Scan Context also works for radar.
+  - Integrated with yeti-radar-odometry for radar SLAM: [navtech-radar-slam](https://github.com/gisbi-kim/navtech-radar-slam)
+    - p.s. please see the ``fast_evaluator_radar`` directory for the radar place recognition evaluation (radar scan context was introduced in [MulRan dataset](https://sites.google.com/view/mulran-pr/home) paper).
 
 ## NEWS (April, 2020): C++ implementation
 - C++ implementation released!
