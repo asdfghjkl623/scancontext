@@ -2,6 +2,12 @@
 
 # Scan Context
 
+## NEWS (Oct, 2021): Scan Context++ is accepted for T-RO!
+- Our extented study named Scan Context++ is accepted for T-RO. 
+  - Scan Context++: Structural Place Recognition Robust to Rotation and Lateral Variations in Urban Environments
+    - [Paper](https://arxiv.org/pdf/2109.13494.pdf), [Summary](https://threadreaderapp.com/thread/1443044133937942533.html), [Video](https://youtu.be/ZWEqwYKQIeg)
+- The additional evaluation codes (e.g., lateral evaluations on Oxford Radar RobotCar dataset) with the new metric (we call it recall-distribution based on KL-D) will be added soon. 
+
 ## Note
 - Scan Context can be easily integrated with any LiDAR odometry algorithms or any LiDAR sensors. Examples are:
   - Integrated with A-LOAM: [SC-A-LOAM](https://github.com/gisbi-kim/SC-A-LOAM)
@@ -32,6 +38,14 @@
 - Scan Context is a global descriptor for LiDAR point cloud, which is proposed in this paper and details are easily summarized in this <a href="https://www.youtube.com/watch?v=_etNafgQXoY"> video </a>.
 
 ```
+@ARTICLE { gskim-2021-tro,
+    AUTHOR = { Giseop Kim and Sunwook Choi and Ayoung Kim },
+    TITLE = { Scan Context++: Structural Place Recognition Robust to Rotation and Lateral Variations in Urban Environments },
+    JOURNAL = { IEEE Transactions on Robotics },
+    YEAR = { 2021 },
+    NOTE = { Accepted. To appear. },
+}
+
 @INPROCEEDINGS { gkim-2018-iros,
   author = {Kim, Giseop and Kim, Ayoung},
   title = { Scan Context: Egocentric Spatial Descriptor for Place Recognition within {3D} Point Cloud Map },
