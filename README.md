@@ -3,7 +3,7 @@
 # Scan Context
 
 ## NEWS (Oct, 2021): Scan Context++ is accepted for T-RO!
-- Our extented study named Scan Context++ is accepted for T-RO. 
+- Our extended study named Scan Context++ is accepted for T-RO. 
   - Scan Context++: Structural Place Recognition Robust to Rotation and Lateral Variations in Urban Environments
     - [Paper](https://arxiv.org/pdf/2109.13494.pdf), [Summary](https://threadreaderapp.com/thread/1443044133937942533.html), [Video](https://youtu.be/ZWEqwYKQIeg)
 - The additional evaluation codes (e.g., lateral evaluations on Oxford Radar RobotCar dataset) with the new metric (we call it recall-distribution based on KL-D) will be added soon. 
