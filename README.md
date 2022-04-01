@@ -16,6 +16,7 @@
   - Integrated with FAST-LIO2: [FAST_LIO_SLAM](https://github.com/gisbi-kim/FAST_LIO_SLAM)
   - Integrated with a basic ICP odometry: [PyICP-SLAM](https://github.com/gisbi-kim/PyICP-SLAM)
     - This implementation is fully python-based so slow but educational purpose.   
+    - If you find a fast python API for Scan Context, use [https://github.com/gisbi-kim/scancontext-pybind](https://github.com/gisbi-kim/scancontext-pybind)
 - Scan Context also works for radar.
   - Integrated with yeti-radar-odometry for radar SLAM: [navtech-radar-slam](https://github.com/gisbi-kim/navtech-radar-slam)
     - p.s. please see the ``fast_evaluator_radar`` directory for the radar place recognition evaluation (radar scan context was introduced in [MulRan dataset](https://sites.google.com/view/mulran-pr/home) paper).
